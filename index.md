@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+# Welcome to Christopher Melugin's GitHub Page
 
 You can use the [editor on GitHub](https://github.com/ChristopherMelugin/ChristopherMelugin.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
