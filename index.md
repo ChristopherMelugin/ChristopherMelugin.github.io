@@ -35,3 +35,13 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+
+
+### CODE REVIEW
+
+Below is a code review I conducted of my own project. I cover how the Inventory app functions, the code associated with it, and some planned enhancements and improvements
+The external link is [here] (https://www.youtube.com/watch?v=QE6oGewLaLA)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QE6oGewLaLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
