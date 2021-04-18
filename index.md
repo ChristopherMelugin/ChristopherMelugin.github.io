@@ -23,10 +23,8 @@ In my Mobile Architecture & Programming class I solely developed a simple Androi
 
 
 | Login and Update Quantities  | Adding and Deleting Items |
-| :------------- | -------------: |
+| :-------------: | :-------------: |
 |![Login and update quantities](Gifs/Login_update_qty.gif "Shows the original app functionality for logging in and updating quantities of an item")|![Adding and deleting items](Gifs/Add_delete.gif "Shows the original app functionality for adding and deleting items")|
-
-
 
 ### CODE REVIEW
 
@@ -49,5 +47,5 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 
 ### DATABASE ENHANCEMENT
 | Tag System  | Filtering System |
-| :------------- | -------------: |
+| :-------------: | :-------------: |
 |![Tag system](Gifs/Tag.gif "App restructured to include a tag for each item. Can add new tags and change an item's tag")|![Filter System](Gifs/Filter.gif "Using database operations, the items can be filtered by their tags")|
