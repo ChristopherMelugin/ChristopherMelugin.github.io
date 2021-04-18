@@ -22,7 +22,8 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 A more complete form of my employable skills and experience are contained in my resume which you can find [here](Resume 2021/Christopher Kent Melugin.pdf).
 
 ### Introduction to Artifacts and Examples
-In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system. A link to the repository for the Inventory app is [here](https://github.com/ChristopherMelugin/Inventory_App).
+In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. I selected this project to enhance as my capstone project because I feel like I got a clear idea of what it is like to be a software engineer by building this app. At the time I was struggling, feeling like I didn't know enough to be successful when the time came to find employment. Completing this project initially from start to finish really bolstered my confidence and taught me a great deal. 
+For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system. A link to the repository for the Inventory app is [here](https://github.com/ChristopherMelugin/Inventory_App).
 
 | Login and Update Quantities  | Adding and Deleting Items |
 | :------------- | :------------- |
@@ -40,6 +41,10 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 | Modify Items |
 | :------------- |
 |![Modify Items](Gifs/Modify.gif "Long clicking an item pops up a screen allowing for modifications")|
+
+This enhancement was designed to create the capabliity for the user to directly modify an item's name and quantity. In creating this enhancement, I struggled somewhat with the app crashing when no value was input into the popup view’s form. I discovered that the app is lacking somewhat in input validation and implemented a check for that. Throughout the process, I learned more about how both the data flows and also how the android platform flows, and as such, unearthed an easier path to implement my plans. 
+
+For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
 ```java
  public void onItemLongClick(InventoryItem item) {
