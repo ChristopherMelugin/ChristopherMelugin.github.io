@@ -21,7 +21,6 @@ Within Computer Science and specifically the development of this portfolio, I ha
 ### Introduction to Artifacts and Examples
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system.
 
-
 | Login and Update Quantities  | Adding and Deleting Items |
 | :-------------: | :-------------: |
 |![Login and update quantities](Gifs/Login_update_qty.gif "Shows the original app functionality for logging in and updating quantities of an item")|![Adding and deleting items](Gifs/Add_delete.gif "Shows the original app functionality for adding and deleting items")|
@@ -34,18 +33,21 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QE6oGewLaLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### SOFTWARE ENGINEERING AND DESIGN ENHANCEMENT
+
 | Modify Items |
 | :-------------: |
 |![Modify Items](Gifs/Modify.gif "Long clicking an item pops up a screen allowing for modifications")|
 
 
 ### DATA STRUCTURES AND ALGORITHMS ENHANCEMENT
+
 | Sorting Items |
 | :-------------: |
 |![Sorting Items](Gifs/Sorting.gif "Sorting by alphabet or by quantity")|
 
 
 ### DATABASE ENHANCEMENT
+
 | Tag System  | Filtering System |
 | :-------------: | :-------------: |
 |![Tag system](Gifs/Tag.gif "App restructured to include a tag for each item. Can add new tags and change an item's tag")|![Filter System](Gifs/Filter.gif "Using database operations, the items can be filtered by their tags")|
