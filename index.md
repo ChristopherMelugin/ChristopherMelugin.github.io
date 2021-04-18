@@ -46,6 +46,8 @@ This enhancement was designed to create the capabliity for the user to directly 
 
 For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
+Below is a code snippet that makes up the bulk of the software engineering/design enhancement.
+
 ```java
  public void onItemLongClick(InventoryItem item) {
         mInventoryItem = item;
