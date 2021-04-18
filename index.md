@@ -18,8 +18,8 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 
 - **general security** to keep people and data safe and prevent undefined behavior.
 
-#### RESUME
-A more complete form of my employable skills and experience are contained in my resume which you can find [here](Resume 2021/Christopher Kent Melugin.pdf).
+### RESUME
+A more complete form of my employable skills and experience are contained in my [resume](Resume 2021/Christopher Kent Melugin.pdf).
 
 ### Introduction to Artifacts and Examples
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. I selected this project to enhance as my capstone project because I feel like I got a clear idea of what it is like to be a software engineer by building this app. At the time I was struggling, feeling like I didn't know enough to be successful when the time came to find employment. Completing this project initially from start to finish really bolstered my confidence and taught me a great deal. 
