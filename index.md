@@ -18,6 +18,7 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 
 - **general security** to keep people and data safe and prevent undefined behavior.
 
+#### RESUME
 A more complete form of my employable skills and experience are contained in my resume which you can find [here](Resume 2021/Christopher Kent Melugin.pdf).
 
 ### Introduction to Artifacts and Examples
