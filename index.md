@@ -7,10 +7,15 @@ Throughout the pursuance of my Computer Science degree in an online-only learnin
 Within Computer Science and specifically the development of this portfolio, I have practiced **_version control_** to keep projects organized and maintain efficient team collaboration. I have demonstrated mastery over the fundamentals of:
 
 - **data structures and algorithms** to handle computations in an efficient, stable, and safe manner
+
 - **software engineering** including good design decisions with the long term kept foremost in mind
+
 - **software architecture** to ensure smooth intuitive development
+
 - **database operations** that are clean and effective
+
 - **general security** to keep people and data safe and prevent undefined behavior.
+
 
 #### Introduction to Artifacts and Examples
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system.
