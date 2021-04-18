@@ -46,7 +46,7 @@ This enhancement was designed to create the capabliity for the user to directly 
 
 For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
-Below is a code snippet that makes up the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
+Below is the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
 
 ```java
  public void onItemLongClick(InventoryItem item) {
@@ -119,9 +119,9 @@ Below is a code snippet that makes up the bulk of what was added for the softwar
 | :------------- |
 |![Sorting Items](Gifs/Sorting.gif "Sorting by alphabet or by quantity")|
 
-This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the onResume() function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
+This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the `onResume()` function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
 
-Below is a code snippet that makes up the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
+Below is the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
 
 ```java
 private List<InventoryItem> loadInventory(String username, String filter) {
@@ -177,3 +177,45 @@ private List<InventoryItem> loadInventory(String username, String filter) {
 | Tag System  | Filtering System |
 | :------------- | :------------- |
 |![Tag system](Gifs/Tag.gif "App restructured to include a tag for each item. Can add new tags and change an item's tag")|![Filter System](Gifs/Filter.gif "Using database operations, the items can be filtered by their tags")|
+
+This app utilizes the SQLite database to manage and maintain the inventory items, and implements each of the create, read, update, and delete database operations to a thorough and efficient effect. The massive improvement that I made to the app that relates to the database is the full implementation of a single tag system (which has been set up to scale well to a multiple tag system) and the accompanying feature to filter the inventory items by any tag. This feature has been seamlessly melded into the rest of the app.
+
+In creating this enhancement, I needed to start with the tag system before I could implement the filter. At first, I didn’t realize just how many extra hours it would take to incorporate an entire tag system into the app which I did just to demonstrate my advanced database abilities. A major challenge I faced was how to connect each item to a tag and opted for a separate mapping table to link each item in the item table to an entry in the tag table.  This made the query to get the filtered list trickier, but more robust in the end. Another challenge was having to restructure or rework much of the app for this new way of working with the data. Including multiple UI elements, their handling, and data flow and behavior because almost every part of the app now needed to handle tags.
+
+Below is the function in the Database.java file that handles the database query to filter the list by a tag.
+
+```java
+    // Gets inventory items with a tag as a filter
+    public List<InventoryItem> getFilteredInventoryItems(String username, String filter) {
+        List<InventoryItem> items = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT * FROM "
+                + ItemTagMappingTable.TABLE + " JOIN "
+                + InventoryTable.TABLE + " ON "
+                + ItemTagMappingTable.ITEM_REFERENCE + " = "
+                + InventoryTable.TABLE + "."
+                + InventoryTable.COL_ID + " JOIN "
+                + TagTable.TABLE + " ON "
+                + ItemTagMappingTable.TAG_REFERENCE + " = "
+                + TagTable.TABLE + "."
+                + TagTable.TAG_ID + " WHERE "
+                + InventoryTable.TABLE + "."
+                + InventoryTable.COL_USERNAME + " = ? AND "
+                + TagTable.TAG_NAME + " = ?";
+
+        Cursor cursor = db.rawQuery(sql, new String[] { username, filter });
+        if(cursor.moveToFirst()) {
+            do {
+                InventoryItem item = new InventoryItem();
+                item.setId(cursor.getInt(2));
+                item.setTitle(cursor.getString(3));
+                item.setQuantity(cursor.getInt(4));
+                item.setNotifyOnLow(cursor.getInt(5));
+                item.setUsername(cursor.getString(6));
+                items.add(item);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return items;
+    }
+```
