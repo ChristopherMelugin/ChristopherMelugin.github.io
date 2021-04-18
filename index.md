@@ -4,7 +4,7 @@
 Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **_self-motivation and attention to detail_**, which is evidenced by my **_3.98 GPA_**. Throughout this time and the past 7.5 years, I have been working full time to support my family which has required a great deal of **_dedication_** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **_professionalism, communication, respect, honesty, and quality_** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
 
 ### Assessment of Skills and Knowledge
-Within Computer Science and specifically the development of this portfolio, I have practiced **_version control_** to keep projects organized and maintain efficient team collaboration. I have demonstrated mastery over the fundamentals of:
+Within Computer Science and the development of this portfolio, I have demonstrated mastery over the fundamentals of each of the following:
 
 - **data structures and algorithms** to handle computations in an efficient, stable, and safe manner
 
@@ -14,14 +14,17 @@ Within Computer Science and specifically the development of this portfolio, I ha
 
 - **database operations** that are clean and effective
 
+- **version control** to keep projects organized and maintain efficient team collaboration.
+
 - **general security** to keep people and data safe and prevent undefined behavior.
- 
+
+A more complete form of my employable skills and experience are contained in my resume which you can find [here](Resume 2021/Christopher Kent Melugin.pdf).
 
 ### Introduction to Artifacts and Examples
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system.
 
 | Login and Update Quantities  | Adding and Deleting Items |
-| :-------------: | :-------------: |
+| :------------- | :------------- |
 |![Login and update quantities](Gifs/Login_update_qty.gif "Shows the original app functionality for logging in and updating quantities of an item")|![Adding and deleting items](Gifs/Add_delete.gif "Shows the original app functionality for adding and deleting items")|
 
 ### CODE REVIEW
@@ -48,5 +51,5 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 ### DATABASE ENHANCEMENT
 
 | Tag System  | Filtering System |
-| :-------------: | :-------------: |
+| :------------- | :------------- |
 |![Tag system](Gifs/Tag.gif "App restructured to include a tag for each item. Can add new tags and change an item's tag")|![Filter System](Gifs/Filter.gif "Using database operations, the items can be filtered by their tags")|
