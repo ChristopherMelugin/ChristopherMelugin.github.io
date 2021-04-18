@@ -23,7 +23,7 @@ In my Mobile Architecture & Programming class I solely developed a simple Androi
 
 
 | Login and Update Quantities  | Adding and Deleting Items |
-| :--------------------------: | :-----------------------: |
+| :------------- | -------------: |
 |![Login and update quantities gif](Gifs/Login_update_qty.gif "Shows the original app functionality for logging in and updating quantities of an item")|![Adding and deleting items](Gifs/Add_delete.gif "Shows the original app functionality for adding and deleting items")|
 
 
