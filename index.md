@@ -46,7 +46,7 @@ This enhancement was designed to create the capabliity for the user to directly 
 
 For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
-Below is a code snippet that makes up the bulk of the software engineering/design enhancement.
+Below is a code snippet that makes up the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
 
 ```java
  public void onItemLongClick(InventoryItem item) {
@@ -119,7 +119,58 @@ Below is a code snippet that makes up the bulk of the software engineering/desig
 | :------------- |
 |![Sorting Items](Gifs/Sorting.gif "Sorting by alphabet or by quantity")|
 
+This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the onResume() function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
 
+Below is a code snippet that makes up the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
+
+```java
+private List<InventoryItem> loadInventory(String username, String filter) {
+        List<InventoryItem> items;
+        if (filter == null) {
+            items = mDb.getInventoryItems(username);
+        }
+        else {
+            items = mDb.getFilteredInventoryItems(username, filter);
+        }
+        if (sAbc == true) {
+            Collections.sort(items, new compareTitles());
+        }
+        else if(sQty == true) {
+            Collections.sort(items, new compareQty());
+        }
+        return items;
+    }
+    
+     // Title sort button function
+    public void sortAbc() {
+        sAbc = !sAbc;
+        sQty = false;
+        onResume();
+    }
+
+    // Quantity sort button function
+    public void sortQty() {
+        sAbc = false;
+        sQty = !sQty;
+        onResume();
+    }
+
+    // Title comparator
+    public static class compareTitles implements Comparator<InventoryItem> {
+        @Override
+        public int compare(InventoryItem item0, InventoryItem item1) {
+            return item0.getTitle().compareTo(item1.getTitle());
+        }
+    }
+
+    // Quantity comparator
+    public static class compareQty implements Comparator<InventoryItem> {
+        @Override
+        public int compare(InventoryItem item0, InventoryItem item1) {
+            return item1.getQuantity() - (item0.getQuantity());
+        }
+    }
+```
 
 ### DATABASE ENHANCEMENT
 
