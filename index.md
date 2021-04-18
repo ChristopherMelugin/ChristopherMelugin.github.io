@@ -15,8 +15,7 @@ Within Computer Science and specifically the development of this portfolio, I ha
 - **database operations** that are clean and effective
 
 - **general security** to keep people and data safe and prevent undefined behavior.
-
-
+ 
 
 ### Introduction to Artifacts and Examples
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system.
@@ -35,14 +34,14 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 ### SOFTWARE ENGINEERING AND DESIGN ENHANCEMENT
 
 | Modify Items |
-| :-------------: |
+| :------------- |
 |![Modify Items](Gifs/Modify.gif "Long clicking an item pops up a screen allowing for modifications")|
 
 
 ### DATA STRUCTURES AND ALGORITHMS ENHANCEMENT
 
 | Sorting Items |
-| :-------------: |
+| :------------- |
 |![Sorting Items](Gifs/Sorting.gif "Sorting by alphabet or by quantity")|
 
 
