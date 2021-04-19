@@ -1,9 +1,9 @@
 # Welcome to Christopher Melugin's GitHub Page and ePortfolio
 
-### Assessment of Values
+### ASSESSMENT OF VALUES
 Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **_self-motivation and attention to detail_**, which is evidenced by my **_3.98 GPA_**. Throughout this time and the past 7.5 years, I have been working full time to support my family which has required a great deal of **_dedication_** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **_professionalism, communication, respect, honesty, and quality_** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
 
-### Assessment of Skills and Knowledge
+### ASSESSMENT OF SKILLS AND KNOWLEDGE
 Within Computer Science and the development of this portfolio, I have demonstrated mastery over the fundamentals of each of the following:
 
 - **data structures and algorithms** to handle computations in an efficient, stable, and safe manner
@@ -21,9 +21,11 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 ### RESUME
 A more complete form of my employable skills and experience are contained in my [resume](Resume 2021/Christopher Kent Melugin.pdf).
 
-### Introduction to Artifacts and Examples
+### INTRODUCTION TO ENHANCEMENTS AND EXAMPLES
 In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. I selected this project to enhance as my capstone project because I feel like I got a clear idea of what it is like to be a software engineer by building this app. At the time I was struggling, feeling like I didn't know enough to be successful when the time came to find employment. Completing this project initially from start to finish really bolstered my confidence and taught me a great deal. 
 For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system. Here is a link to the [repository](https://github.com/ChristopherMelugin/Inventory_App) for the Inventory app.
+
+###### Here is a visualization of the features the app had for the Mobilie Architecture and Programming class
 
 | Login and Update Quantities  | Adding and Deleting Items |
 | :------------- | :------------- |
@@ -46,7 +48,7 @@ This enhancement was designed to create the capabliity for the user to directly 
 
 For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
-Below is the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
+###### Here is the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
 
 ```java
  public void onItemLongClick(InventoryItem item) {
@@ -121,7 +123,7 @@ Below is the bulk of what was added for the software engineering/design enhancem
 
 This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the `onResume()` function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
 
-Below is the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
+###### Here is the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
 
 ```java
 private List<InventoryItem> loadInventory(String username, String filter) {
@@ -182,7 +184,7 @@ This app utilizes the SQLite database to manage and maintain the inventory items
 
 In creating this enhancement, I needed to start with the tag system before I could implement the filter. At first, I didn’t realize just how many extra hours it would take to incorporate an entire tag system into the app which I did just to demonstrate my advanced database abilities. A major challenge I faced was how to connect each item to a tag and opted for a separate mapping table to link each item in the item table to an entry in the tag table.  This made the query to get the filtered list trickier, but more robust in the end. Another challenge was having to restructure or rework much of the app for this new way of working with the data. Including multiple UI elements, their handling, and data flow and behavior because almost every part of the app now needed to handle tags.
 
-Below is the function in the Database.java file that handles the database query to filter the list by a tag.
+###### Here is the function in the Database.java file that handles the database query to filter the list by a tag.
 
 ```java
     // Gets inventory items with a tag as a filter
