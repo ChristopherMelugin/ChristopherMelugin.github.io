@@ -10,7 +10,7 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 
 - **software engineering** including good design decisions with the long term kept foremost in mind
 
-- **software architecture** to ensure smooth intuitive development
+- **software architecture** to ensure smooth, intuitive development
 
 - **database operations** that are clean and effective
 
@@ -123,7 +123,7 @@ For example, when trying to get the popup view to initially display the item’s
 
 This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the `onResume()` function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
 
-###### Here is the bulk of what was added for the data structures and algorithms enhancement. (does not include any UI updates)
+###### Here is the bulk of what was added for the data structures and algorithms enhancement. (Does not include any UI updates)
 
 ```java
 private List<InventoryItem> loadInventory(String username, String filter) {
