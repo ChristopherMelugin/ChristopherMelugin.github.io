@@ -1,7 +1,7 @@
 # Welcome to Christopher Melugin's GitHub Page and ePortfolio
 
 ### ASSESSMENT OF VALUES
-Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **_self-motivation and attention to detail_**, which is evidenced by my **_3.98 GPA_**. Throughout this time and the past 7.5 years, I have been working full time to support my family which has required a great deal of **_dedication_** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **_professionalism, communication, respect, honesty, and quality_** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
+Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **self-motivation and attention to detail**, which is evidenced by my **3.98 GPA**. Throughout this time and the past 7.5 years, I have been working full time to support my family which has required a great deal of **dedication** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **professionalism, communication, respect, honesty, and quality** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
 
 ### ASSESSMENT OF SKILLS AND KNOWLEDGE
 Within Computer Science and the development of this portfolio, I have demonstrated mastery over the fundamentals of each of the following:
@@ -22,7 +22,7 @@ Within Computer Science and the development of this portfolio, I have demonstrat
 A more complete form of my employable skills and experience are contained in my [resume](Resume 2021/Christopher Kent Melugin.pdf).
 
 ### INTRODUCTION TO ENHANCEMENTS AND EXAMPLES
-In my Mobile Architecture & Programming class I solely developed a simple Android application using Java and XML to manage an inventory. I selected this project to enhance as my capstone project because I feel like I got a clear idea of what it is like to be a software engineer by building this app. At the time I was struggling, feeling like I didn't know enough to be successful when the time came to find employment. Completing this project initially from start to finish really bolstered my confidence and taught me a great deal. 
+In my Mobile Architecture & Programming class I developed a simple Android application on my own using Java and XML to manage an inventory. I selected this project to enhance as my capstone project because I feel like I got a clear idea of what it is like to be a software engineer by building this app. At the time I was struggling, feeling like I didn't know enough to be successful when the time came to find employment. Completing this project initially from start to finish really bolstered my confidence and taught me a great deal. 
 For this portfolio I have enhanced and iterated on this fully functional application to demonstrate my competency and abilities in various categories which are: code reviews to evaluate current code conditions and identify improvements, software engineering and design through implementing a new way to interact with the inventory items, data structures and algorithms through a sorting function and database operations by implementing tagging and filtering system. Here is a link to the [repository](https://github.com/ChristopherMelugin/Inventory_App) for the Inventory app.
 
 ###### Here is a visualization of the features the app had for the Mobilie Architecture and Programming class
@@ -44,9 +44,9 @@ The external link is [here](https://www.youtube.com/watch?v=QE6oGewLaLA).
 | :------------- |
 |![Modify Items](Gifs/Modify.gif "Long clicking an item pops up a screen allowing for modifications")|
 
-This enhancement was designed to create the capabliity for the user to directly modify an item's name and quantity. In creating this enhancement, I struggled somewhat with the app crashing when no value was input into the popup view’s form. I discovered that the app is lacking somewhat in input validation and implemented a check for that. Throughout the process, I learned more about how both the data flows and also how the android platform flows, and as such, unearthed an easier path to implement my plans. 
+This enhancement was designed to create the capabliity for the user to directly modify an item's name and quantity. In creating this enhancement, I encountered an issue with the app crashing when no value was input into the popup view’s form. I discovered that the app is lacking somewhat in input validation and implemented a check for that. Throughout the process, I learned more about how both the data flows and also how the android platform flows, and as such, unearthed an easier path to implement my plans. 
 
-For example, when trying to get the popup view to initially display the item’s name and quantity values in the editable fields, I struggled with trying to set and then change a string constant in the resources file, only to discover that that is impossible to do at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
+For example, when trying to get the popup view to initially display the item’s current name and quantity values in the editable fields, I struggled to find a solution. My first thought was to set and then change a string constant in the resources file, only to discover that that is impossible to alter that file at runtime, and instead found a much simpler way by just using a simple call to set the text: `popup_item_name.setText(item.getTitle());` . This helped remind me that there is often a simple solution to the issues you are facing, and that a simple solution is more often than not better than a complicated solution.
 
 ###### Here is the bulk of what was added for the software engineering/design enhancement. (Does not include any UI updates)
 
@@ -121,7 +121,7 @@ For example, when trying to get the popup view to initially display the item’s
 | :------------- |
 |![Sorting Items](Gifs/Sorting.gif "Sorting by alphabet or by quantity")|
 
-This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I struggled a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting after and how to determine which property is the sort criteria. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the `onResume()` function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well.
+This enhancement was designed to increase the manipulability of the items by implementing two types of sorting. In creating this enhancement, I deliberated a little with how exactly to implement the sorting. I had a few choices, sorting as the list is being pulled from the database, or sorting the array list that the data resides in. A problem with the first choice was differentiating the property to sort by while simultaneously extracting it all from the database was a complicated process that I abandoned early. I eventually decided to set the UI buttons to toggle a respective Boolean value and then trigger the `onResume()` function to reload the items. During this process the Boolean values are checked and when found true, the list is sorted before populating into the view with the adapter. This way the sorting happens inline. I implemented some comparator functions to make sure that the right values were being checked for the sorts as well, leading to a fast and effective solution.
 
 ###### Here is the bulk of what was added for the data structures and algorithms enhancement. (Does not include any UI updates)
 
@@ -221,3 +221,6 @@ In creating this enhancement, I needed to start with the tag system before I cou
         return items;
     }
 ```
+
+
+
