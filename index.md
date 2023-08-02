@@ -1,7 +1,7 @@
 # Welcome to Christopher Melugin's GitHub Page and ePortfolio
 
 ### ASSESSMENT OF VALUES
-Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **self-motivation and attention to detail**, which is evidenced by my **3.98 GPA**. Throughout this time and the past 7.5 years, I have been working full time to support my family which has required a great deal of **dedication** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **professionalism, communication, respect, honesty, and quality** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
+Throughout the pursuance of my Computer Science degree in an online-only learning environment, I have honed my **self-motivation and attention to detail**, which is evidenced by my **3.98 GPA**. Throughout this time and since the year 2014, I have been working full time to support my family which has required a great deal of **dedication** and no small amount of sacrifice to achieve my educational goals. My combined experiences have taught me that **professionalism, communication, respect, honesty, and quality** are among the greatest assets a company can have in an employee, and I strongly believe I have cultivated these qualities to great effect. 
 
 ### ASSESSMENT OF SKILLS AND KNOWLEDGE
 Within Computer Science and the development of this portfolio, I have demonstrated mastery over the fundamentals of each of the following:
